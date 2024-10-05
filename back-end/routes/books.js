@@ -3,11 +3,12 @@ const router = express.Router()
 const {createBook, modifyBook, getBook, getAllBooks, deleteBook, mostratedBooks, addRate} = require('../controllers/books')
 const auth = require('../middleware/auth')
 const multer = require('../middleware/multerConfig')
+const compressImage = require('../middleware/compressImage')
 
-router.post('/', auth, multer, createBook)
+router.post('/', auth, multer, compressImage, createBook)
 
 // MAJ dans la collection Books l'object avec l'ID en paramètre
-router.put('/:id', auth, multer, modifyBook)
+router.put('/:id', auth, multer, compressImage, modifyBook)
 
 router.get('/bestrating/', mostratedBooks)
 

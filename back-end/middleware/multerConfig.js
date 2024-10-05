@@ -1,4 +1,5 @@
 const multer = require('multer')
+const sharp = require('sharp')
 
 const MIMES_TYPES = {
     'image/jpg': 'jpg',
@@ -15,7 +16,8 @@ const storage = multer.diskStorage({
     filename: (req, file, callback) => {
         const name = (file.originalname.split(' ').join("_")).split('.')[0]
         const ext = MIMES_TYPES[file.mimetype]
-        callback(null, name + Date.now() + '.' + ext)
+        
+        callback(null, name + '.' + ext)
       }
 
 })
