@@ -72,7 +72,7 @@ exports.deleteBook = (req, res) => {
           const filename = book.imageUrl.split('/images/')[1]
           fs.unlink(path.join(__dirname, '..', 'images', filename), () => {
             Books.deleteOne({_id: req.params.id}) 
-              .then(() => { res.status(200).json({ message: 'Livre supprimé avec succès !'})})
+              .then(() => { res.status(204).json({ message: 'Livre supprimé avec succès !'})})
               .catch((error) => res.status(401).json({ error }))
           })
         }
