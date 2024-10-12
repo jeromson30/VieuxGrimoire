@@ -31,6 +31,6 @@ Placez vous dans le dossier backend, configurer la connexion à la base de donn�
 npm start
 ```
 
-Faire de même dans le dossier front-end
+Réiterez la commande dans le dossier front-end
 
 
