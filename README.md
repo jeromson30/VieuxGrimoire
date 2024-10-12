@@ -1,7 +1,9 @@
 ## VieuxGrimoire : Projet 6
 
 Réalisation du backend en Javascript, création d'une API REST pour dialoguer avec le frontend.
+
 Optimisation des images uploadés avec SHARP
+
 Gestion des tokens d'authentification avec JWT
 
 ## Installation
