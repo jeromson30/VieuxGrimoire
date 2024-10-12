@@ -7,7 +7,7 @@ Optimisation des images uploadés avec SHARP
 Gestion des tokens d'authentification avec JWT
 
 ## Installation
-Pour cloner le projet n'oubliez pas le paramètre --recursive afin de charger également le front-end (facultatif si vous avez deja le frontend) :
+Pour cloner le projet n'oubliez pas le paramètre --recursive afin de charger également le front-end (facultatif si vous avez déjà le frontend) :
 ```
 git clone --recursive https://github.com/jeromson30/VieuxGrimoire.git
 ```
