@@ -23,3 +23,14 @@ npm install
 ```
 
 Ne pas oublier de configurer le port du backend dans le fichier /front-end/src/utils/constants.js
+
+## Lancement
+
+Placez vous dans le dossier backend puis lancer la commande :
+```
+npm start
+```
+
+Faire de même dans le dossier front-end
+
+
